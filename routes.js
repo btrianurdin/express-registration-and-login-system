@@ -1,6 +1,4 @@
 var express = require('express');
-var passport = require('passport');
-var LocalStrategy = require('passport-local');
 
 var router = express.Router();
 
@@ -37,9 +35,9 @@ router.post('/signup', function(req, res, next) {
     var password = req.body.pass;
 
     User.findOne({ username: username }, function(err, user) {
-        // if(err) {
-        //     return next(err);
-        // }
+        if(err) {
+            return next(err);
+        }
         if(user) {
             req.flash('error', 'User already exists');
             return res.redirect('/signup');
@@ -50,13 +48,25 @@ router.post('/signup', function(req, res, next) {
             password: password
         });
         newUser.save(next);
+    }).then(function() {
+        res.redirect('/');
     });
-}, passport.authenticate('login', {
-    successRedirect: '/',
-    failureRedirect: '/signup',
-    failureFlash: true
-}));
+});
 
-router.get("/users/:username", function(req, res, next) { User.findOne({ username: req.params.username }, function(err, user) { if (err) { return next(err); } if (!user) { return next(404); } res.render("profile", { user: user }); }); });
+router.get("/users/:username", function (req, res, next) {
+    User.findOne({
+        username: req.params.username
+    }, function (err, user) {
+        if (err) {
+            return next(err);
+        }
+        if (!user) {
+            return res.status(404).send('404: File not found!');
+        }
+        res.render("profile", {
+            user: user
+        });
+    });
+});
 
 module.exports = router;
