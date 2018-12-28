@@ -8,7 +8,10 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes');
 
-mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://robert911:@skmE0904@ds145184.mlab.com:45184/heroku_m50hmbxj",
+ {
+   useMongoClient: true
+ });
 
 app.set('port', process.env.PORT || 3000);
 
