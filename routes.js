@@ -48,10 +48,13 @@ router.post('/signup', function(req, res, next) {
             password: password
         });
         newUser.save(next);
-    }).then(function() {
-        res.redirect('/');
+
     });
-});
+    }, passport.authenticate("login", {
+    successRedirect: "/",
+    failureRedirect: "/signup",
+    failureFlash: true
+    }));
 
 router.get("/users/:username", function (req, res, next) {
     User.findOne({
