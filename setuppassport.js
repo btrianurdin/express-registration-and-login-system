@@ -15,7 +15,7 @@ module.exports = function () {
         });
     });
 
-    passport.use(new LocalStrategy(
+    passport.use('login', new LocalStrategy(
         function(username, password, done) {
             User.findOne({ username: username }, function(err, user) {
                 if(err) {
