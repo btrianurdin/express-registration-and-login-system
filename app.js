@@ -27,7 +27,10 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(flash());
-app.use(routes);
+app.get('/', function(req, res) {
+    res.render('index');
+})
+// app.use(routes);
 
 app.listen(app.get('port'), function() {
     console.log('Server started on port ' + app.get('port'));
