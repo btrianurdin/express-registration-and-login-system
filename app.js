@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes');
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://robert:askme123@ds233571.mlab.com:33571/heroku_rhn16zjb",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:askme123@ds127436.mlab.com:27436/heroku_jgsm1d55",
  {
    useMongoClient: true
  });
