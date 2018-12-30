@@ -13,10 +13,13 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://user:askme123@ds127436.ml
  {
    useMongoClient: true
  });
+
+
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testdb",
 //  {
 //    useNewUrlParser: true
 //  });
+
 setUpPassport();
 
 app.set('port', process.env.PORT || 3000);
