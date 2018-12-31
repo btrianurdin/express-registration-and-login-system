@@ -9,16 +9,15 @@ var passport = require('passport');
 var setUpPassport = require('./setuppassport');
 var routes = require('./routes');
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user:askme123@ds127436.mlab.com:27436/heroku_jgsm1d55",
- {
-   useMongoClient: true
- });
-
-
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testdb",
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://user:askme123@ds127436.mlab.com:27436/heroku_jgsm1d55",
 //  {
-//    useNewUrlParser: true
+//    useMongoClient: true
 //  });
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testdb",
+ {
+   useNewUrlParser: true
+ });
 
 setUpPassport();
 

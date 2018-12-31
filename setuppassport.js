@@ -37,8 +37,8 @@ module.exports = function () {
                             message: 'Invalid password'
                         });
                     }
-                })
-            })
+                });
+            });
         }
-    ))
+    ));
 };
