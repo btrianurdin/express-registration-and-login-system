@@ -19,8 +19,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testdb",
    useNewUrlParser: true
  });
 
-setUpPassport();
-
 app.set('port', process.env.PORT || 3000);
 
 app.set('views', path.join(__dirname, 'views'));
@@ -37,6 +35,8 @@ app.use(session({
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
+
+setUpPassport();
 
 app.use(routes);
 
