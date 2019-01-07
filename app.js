@@ -9,7 +9,7 @@ var passport = require('passport');
 var setUpPassport = require('./setuppassport');
 var routes = require('./routes');
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds247944.mlab.com:47944/heroku_1c7d3wbd",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds117615.mlab.com:17615/heroku_d53b33g0",
  {
    useMongoClient: true
  });
