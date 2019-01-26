@@ -8,3 +8,7 @@
 ```
 > npm start
 ```
+
+## Desclaimer
+- Still has a bug
+- Ongoing project
