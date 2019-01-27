@@ -1,4 +1,4 @@
-# Expressjs Registration and Login System
+# Registration and Login System
 
 A simple registration and login system demo using opensource projects like [Express](https://expressjs.com/) and an authentication middleware called [Passportjs](http://www.passportjs.org/). The authentication process also includes encryption of Password using [bcrypt](https://www.npmjs.com/package/bcrypt) an NPM module.
 
