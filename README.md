@@ -31,7 +31,6 @@ $ npm install
 ```sh
 $ npm start
 ```
-<<<<<<< HEAD
 
 ## What I've learn
 
@@ -51,11 +50,3 @@ License
 MIT
 
 **Knowledge is Open Source**
-=======
-> npm start
-```
-
-## Desclaimer
-- Still has a bug
-- Ongoing project
->>>>>>> 46a40dd9d54e5bbdb8d665f087dac0ae479a27b8
