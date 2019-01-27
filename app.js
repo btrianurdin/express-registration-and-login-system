@@ -9,15 +9,10 @@ var passport = require('passport');
 var setUpPassport = require('./setuppassport');
 var routes = require('./routes');
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds117615.mlab.com:17615/heroku_d53b33g0",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password123@ds113845.mlab.com:13845/heroku_ftc1qv1b",
  {
    useMongoClient: true
  });
-
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testdb",
-//  {
-//    useNewUrlParser: true
-//  });
 
 app.set('port', process.env.PORT || 3000);
 
