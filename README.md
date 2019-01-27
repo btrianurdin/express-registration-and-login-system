@@ -15,7 +15,7 @@ This project uses a number of open source projects to work properly:
 
 - [Heroku](https://www.heroku.com/) - is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
-- [bcrypt]([bcrypt](https://www.npmjs.com/package/bcrypt) - is an opensource password hashing function implementation on [node.js](https://nodejs.org/en/).
+- [bcrypt](https://www.npmjs.com/package/bcrypt) - is an opensource password hashing function implementation on [node.js](https://nodejs.org/en/).
 
 - And much more...
 
