@@ -6,18 +6,13 @@ A simple registration and login system demo using opensource projects like [Expr
 This project uses a number of open source projects to work properly:
 
 - [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-
 - [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
-
 - [mongoDB](https://www.mongodb.com/) - The best MongoDB experience. Access data directly from your frontend code, intelligently distribute data for global apps, trigger serverless functions in response to data changes, and much more.
-
 - [Mongoose ODM](https://mongoosejs.com/) - provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
-
 - [Heroku](https://www.heroku.com/) - is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
-
 - [bcrypt](https://www.npmjs.com/package/bcrypt) - is an opensource password hashing function implementation on [node.js](https://nodejs.org/en/).
 
-- And much more...
+- And many more...
 
 ## Installation
 
