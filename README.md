@@ -36,7 +36,6 @@ $ npm start
 
 ## What I've learn
 
-- How to implement ***node package modules*** [📦 ](https://www.npmjs.com/) in conjunction with other packages to build a system.
 - Module-based architecture.
 - Implementation of [Passportjs Strategies](http://www.passportjs.org/packages/)
 - Many More!
